@@ -3,12 +3,11 @@ import Container from '../layout/Container'
 import LinkButton from "../layout/LinkButton"
 import ProjectCard from "../../project/ProjectCard"
 import Loading from "../layout/Loading"
-import { useAsyncError, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { useState, useEffect } from "react"
 import styles from './Projects.module.css'
 
 function Projects(){
-
     const [projects, setProjects] = useState([])
     const [removeLoading, setRemoveLoading] = useState(false)
     const [projectMessage, setProjectsMessage] = useState('')
